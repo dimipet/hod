@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExcelFiles>
+
+	<DataInput group="main">
+<!-- 		
+		<Path>current.xls</Path>
+		<Sheet name="" index="0"></Sheet>
+-->
+
+		<Cell group="headers" parse="false" validate="false" mrged="true" start="A1" end="A1" type="String"></Cell>
+		<Cell group="headers" parse="true" validate="false" merged="false" start="A3" end="A3" type="String">ΝΟΣΟΚΟΜΕΙΑ</Cell>
+		<Cell group="headers" parse="true" validate="false" merged="false" start="B3" end="B3" type="String">ΚΛΙΝΙΚΕΣ</Cell>
+
+		<Cell group="footer" parse="true" validate="false" merged="false" start="B98" end="B98" type="String"></Cell>
+		<Cell group="footer" parse="true" validate="false" merged="false" start="B99" end="B99" type="String"></Cell>
+		<Cell group="footer" parse="true" validate="false" merged="true" start="B100" end="B100" type="String"></Cell>
+		<Cell group="footer" parse="true" validate="false" merged="true" start="B101" end="B101" type="String"></Cell>
+		<Cell group="footer" parse="true" validate="false" merged="true" start="B102" end="B102" type="String"></Cell>
+
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A4" end="A4" type="String">ΓΕΩΡΓΙΟΣ ΠΑΠΑΝΙΚΟΛΑΟΥ</Cell>
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A21" end="A21" type="String">ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ</Cell>
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A27" end="A27" type="String">ΑΧΕΠΑ</Cell>
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A40" end="A40" type="String">ΑΓΙΟΣ ΠΑΥΛΟΣ</Cell>
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A48" end="A48" type="String">ΠΑΠΑΓΕΩΡΓΙΟΥ</Cell>
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A68" end="A68" type="String">ΓΕΩΡΓΙΟΣ ΓΕΝΝΗΜΑΤΑΣ</Cell>
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A78" end="A78" type="String">ΙΠΠΟΚΡΑΤΕΙΟ</Cell>
+		<Cell group="hospitals" parse="true" validate="true" merged="true" start="A96" end="A96" type="String">ΨΝΘ</Cell>
+
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B4" end="B4" type="String">Παθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B5" end="B5" type="String">Καρδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B6" end="B6" type="String">Αιμοδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B7" end="B7" type="String">Νευρολ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B8" end="B8" type="String">Χειρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B9" end="B9" type="String">Ορθοπ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B10" end="B10" type="String">Πλαστ.χειρ.</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B11" end="B11" type="String">ΩΡΛ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B12" end="B12" type="String">Γναθοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B13" end="B13" type="String">Νευροχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B14" end="B14" type="String">Θωρ/κή</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B15" end="B15" type="String">Καρδοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B16" end="B16" type="String">Οφθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B17" end="B17" type="String">Αγγειοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B18" end="B18" type="String">Πνευμον.</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B19" end="B19" type="String">Παιδοψυχ.</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B20" end="B20" type="String">Ψυχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B21" end="B21" type="String">Παθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B22" end="B22" type="String">Χειρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B23" end="B23" type="String">Ουρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B24" end="B24" type="String">Οφθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B25" end="B25" type="String">Οδον</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B26" end="B26" type="String">Γυν</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B27" end="B27" type="String">Παθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B28" end="B28" type="String">Καρδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B29" end="B29" type="String">Αιμοδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B30" end="B30" type="String">Νευρολ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B31" end="B31" type="String">Παιδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B32" end="B32" type="String">Χειρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B33" end="B33" type="String">ΩΡΛ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B34" end="B34" type="String">Νευροχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B35" end="B35" type="String">Θωρ/κή</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B36" end="B36" type="String">Καρδοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B37" end="B37" type="String">Οφθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B38" end="B38" type="String">Αγγειοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B39" end="B39" type="String">Ψυχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B40" end="B40" type="String">Παθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B41" end="B41" type="String">Καρδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B42" end="B42" type="String">Χειρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B43" end="B43" type="String">Αιμοδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B44" end="B44" type="String">Ουρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B45" end="B45" type="String">Νευρολ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B46" end="B46" type="String">Ορθοπ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B47" end="B47" type="String">Οδον</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B48" end="B48" type="String">Παθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B49" end="B49" type="String">Καρδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B50" end="B50" type="String">Αιμοδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B51" end="B51" type="String">Νευρολ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B52" end="B52" type="String">Παιδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B53" end="B53" type="String">Νεογν</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B54" end="B54" type="String">Χειρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B55" end="B55" type="String">Ορθοπ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B56" end="B56" type="String">Πλαστ.χειρ.</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B57" end="B57" type="String">Ουρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B58" end="B58" type="String">Νευροχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B59" end="B59" type="String">Θωρ/κή</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B60" end="B60" type="String">Καρδοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B61" end="B61" type="String">ΩΡΛ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B62" end="B62" type="String">Οφθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B63" end="B63" type="String">Μ/Γ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B64" end="B64" type="String">Παιδοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B65" end="B65" type="String">Παιδοορθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B66" end="B66" type="String">Αγγειοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B67" end="B67" type="String">Ψυχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B68" end="B68" type="String">Παθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B69" end="B69" type="String">Καρδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B70" end="B70" type="String">Παιδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B71" end="B71" type="String">Χειρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B72" end="B72" type="String">Ορθοπ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B73" end="B73" type="String">Ουρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B74" end="B74" type="String">ΩΡΛ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B75" end="B75" type="String">Παιδοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B76" end="B76" type="String">Παιδοορθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B77" end="B77" type="String">Αγγειοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B78" end="B78" type="String">Παθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B79" end="B79" type="String">Καρδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B80" end="B80" type="String">Νευρολ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B81" end="B81" type="String">Παιδ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B82" end="B82" type="String">Νεογν</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B83" end="B83" type="String">Χειρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B84" end="B84" type="String">Ορθοπ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B85" end="B85" type="String">Ουρ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B86" end="B86" type="String">ΩΡΛ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B87" end="B87" type="String">Νευροχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B88" end="B88" type="String">Οφθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B89" end="B89" type="String">Οδον</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B90" end="B90" type="String">Μ/Γ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B91" end="B91" type="String">Παιδοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B92" end="B92" type="String">Παιδοορθ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B93" end="B93" type="String">Αγγειοχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B94" end="B94" type="String">Αιμοδ</Cell>		
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B95" end="B95" type="String">Παιδοψυχ.</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B96" end="B96" type="String">Ψυχ</Cell>
+		<Cell group="clinics" parse="true" validate="true" merged="false" start="B97" end="B97" type="String">Οδον</Cell>
+		
+		<Cell group="dates" parse="true" validate="true" merged="false" start="C3" end="AG3" type="Date"></Cell>
+		
+	</DataInput>
+<!-- 
+	<DataOutput>
+		<Path>hod-day-files</Path>
+        <Sheet name="workbook" index="0"></Sheet>
+	</DataOutput>
+ -->	
+	
+	<!-- 
+		TODO: dates should be computed per month, not declared explicitly in an XML file  
+	
+	<DataInput group="datesSep2020">
+		<Path>current.xls</Path>
+		<Sheet>pyexcel sheet</Sheet>
+		<Cell parse="true" validate="true" merged="false" start="C3" end="C3" type="Date">2020-09-01T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="D3" end="D3" type="Date">2020-09-02T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="E3" end="E3" type="Date">2020-09-03T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="F3" end="F3" type="Date">2020-09-04T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="G3" end="G3" type="Date">2020-09-05T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="H3" end="H3" type="Date">2020-09-06T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="I3" end="I3" type="Date">2020-09-07T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="J3" end="J3" type="Date">2020-09-08T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="K3" end="K3" type="Date">2020-09-09T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="L3" end="L3" type="Date">2020-09-10T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="M3" end="M3" type="Date">2020-09-11T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="N3" end="N3" type="Date">2020-09-12T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="O3" end="O3" type="Date">2020-09-13T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="P3" end="P3" type="Date">2020-09-14T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="Q3" end="Q3" type="Date">2020-09-15T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="R3" end="R3" type="Date">2020-09-16T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="S3" end="S3" type="Date">2020-09-17T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="T3" end="T3" type="Date">2020-09-18T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="U3" end="U3" type="Date">2020-09-19T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="V3" end="V3" type="Date">2020-09-20T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="W3" end="W3" type="Date">2020-09-21T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="X3" end="X3" type="Date">2020-09-22T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="Y3" end="Y3" type="Date">2020-09-23T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="Z3" end="Z3" type="Date">2020-09-24T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="AA3" end="AA3" type="Date">2020-09-25T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="AB3" end="AB3" type="Date">2020-09-26T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="AC3" end="AC3" type="Date">2020-09-27T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="AD3" end="AD3" type="Date">2020-09-28T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="AE3" end="AE3" type="Date">2020-09-29T00:00</Cell>
+		<Cell parse="true" validate="true" merged="false" start="AF3" end="AF3" type="Date">2020-09-30T00:00</Cell>
+	</DataInput>-->
+	
+    <!--  
+    <OutputFile>
+        <Path>/tmp/excelmerger/out.xlsx</Path>
+        <Sheet>merged</Sheet>
+        <Heading>Author: Dimitrios</Heading>
+    </OutputFile>
+    -->
+    
+    
+</ExcelFiles>
