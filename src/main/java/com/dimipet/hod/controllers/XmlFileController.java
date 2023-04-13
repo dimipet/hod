@@ -43,7 +43,8 @@ public class XmlFileController {
 		if (!file.getContentType().equals("application/xml")) {
 			return ResponseEntity.badRequest().body(messageSource.getMessage("file.not.xml", null, LocaleContextHolder.getLocale()));
 		}
-
+		
+		//create the file locally with .tmp suffix
 		File convFile = new File(file.getOriginalFilename() + ".tmp");
 		try {
 			convFile.createNewFile();
@@ -52,11 +53,14 @@ public class XmlFileController {
 			fout.close();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		} 
 
 		if (!XMLValidator.isValidated(convFile)) {
 			return ResponseEntity.badRequest().body(messageSource.getMessage("xml.not.validated", null, LocaleContextHolder.getLocale()));
 		}
+		
+		//delete the local file created
+		convFile.delete();
 		
 		return ResponseEntity.ok(messageSource.getMessage("xml.uploaded.validated.successfully", null, LocaleContextHolder.getLocale()));
 	}

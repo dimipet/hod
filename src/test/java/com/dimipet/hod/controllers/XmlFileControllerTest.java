@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
@@ -34,6 +35,9 @@ class XmlFileControllerTest {
     
     @Autowired
     private MessageSource messageSource;
+    
+    @Value("${server.servlet.contextPath}")
+    private String contextPath;
 
     @Test
     void checkUploadAndValidateGoodXmlFile() throws Exception {
@@ -49,7 +53,7 @@ class XmlFileControllerTest {
         HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
 
         ResponseEntity<String> responseEntity = restTemplate.exchange(
-            "http://localhost:" + port + "/xml/validate",
+            "http://localhost:" + port + contextPath + "/xml/validate",
             HttpMethod.POST,
             requestEntity,
             String.class
@@ -73,7 +77,7 @@ class XmlFileControllerTest {
     	HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
     	
     	ResponseEntity<String> responseEntity = restTemplate.exchange(
-    			"http://localhost:" + port + "/xml/validate",
+    			"http://localhost:" + port + contextPath + "/xml/validate",
     			HttpMethod.POST,
     			requestEntity,
     			String.class
