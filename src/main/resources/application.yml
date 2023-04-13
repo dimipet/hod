@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: hod
+  
+  autoconfigure:
+    exclude:
+    - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  
+  h2:
+    console:
+      enabled: 'true'
+  
+  datasource:
+    url: jdbc:h2:mem:dcbapp
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+server:
+  port: 8080
+  servlet:
+    contextPath: /hod/api
+  error:
+    whitelabel:
+      enabled: false

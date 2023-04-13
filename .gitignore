@@ -1,14 +1,20 @@
-# Compiled class file
-*.class
-
-# Log file
+### Generic ###
+build/
+dist/
+bin/
+.classpath
+.factorypath
+.project
+.metadata
 *.log
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -18,6 +24,115 @@
 *.zip
 *.tar.gz
 *.rar
+*.7z
+*.dmg
+*.gz
+*.iso
+*.sar
+*.class
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/target/
+/nbproject/
+
+
+### Maven ###
+target/
+
+### Gradle ###
+HELP.md
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
+### STS ###
+.apt_generated
+.settings
+.springBeans
+.sts4-cache
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+nbproject/private/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+nbbuild/
+.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# Eclipse
+.settings/
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+# CDT- autotools
+.autotools
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# Code Recommenders
+.recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
+tomcat
+
+# BlueJ files
+*.ctxt
+
+
+# OS
+.DS_Store
+
+# Misc
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
+
+_bu/
